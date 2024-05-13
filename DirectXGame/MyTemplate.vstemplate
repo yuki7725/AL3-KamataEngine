@@ -1,0 +1,90 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>DirectXGame</Name>
+    <Description>&lt;説明はありません。&gt;</Description>
+    <ProjectType>VC</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>DirectXGame</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="DirectXGame.vcxproj" File="DirectXGame.vcxproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="false" TargetFileName="$projectname$.vcxproj.filters">DirectXGame.vcxproj.filters</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="main.cpp">main.cpp</ProjectItem>
+      <Folder Name="base" TargetFolderName="base">
+        <ProjectItem ReplaceParameters="false" TargetFileName="DirectXCommon.cpp">BASE\DirectXCommon.cpp</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="WinApp.cpp">BASE\WinApp.cpp</ProjectItem>
+      </Folder>
+      <Folder Name="scene" TargetFolderName="scene">
+        <ProjectItem ReplaceParameters="false" TargetFileName="GameScene.cpp">SCENE\GameScene.cpp</ProjectItem>
+      </Folder>
+      <Folder Name="input" TargetFolderName="input" />
+      <Folder Name="math" TargetFolderName="math" />
+      <Folder Name="2d" TargetFolderName="2d">
+        <ProjectItem ReplaceParameters="false" TargetFileName="ImGuiManager.cpp">2D\ImGuiManager.cpp</ProjectItem>
+      </Folder>
+      <Folder Name="3d" TargetFolderName="3d">
+        <ProjectItem ReplaceParameters="false" TargetFileName="AxisIndicator.h">3D\AxisIndicator.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="CircleShadow.h">3D\CircleShadow.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="DebugCamera.h">3D\DebugCamera.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="DirectionalLight.h">3D\DirectionalLight.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="LightGroup.h">3D\LightGroup.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Material.h">3D\Material.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Mesh.h">3D\Mesh.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Model.h">3D\Model.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ObjectColor.h">3D\ObjectColor.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="PointLight.h">3D\PointLight.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="PrimitiveDrawer.h">3D\PrimitiveDrawer.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="SpotLight.h">3D\SpotLight.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Terrain.h">3D\Terrain.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="TerrainCommon.h">3D\TerrainCommon.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="ViewProjection.h">3D\ViewProjection.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="WorldTransform.h">3D\WorldTransform.h</ProjectItem>
+      </Folder>
+      <Folder Name="2d" TargetFolderName="2d">
+        <ProjectItem ReplaceParameters="false" TargetFileName="ImGuiManager.h">2D\ImGuiManager.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Sprite.h">2D\Sprite.h</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Audio.h">AUDIO\Audio.h</ProjectItem>
+      <Folder Name="base" TargetFolderName="base">
+        <ProjectItem ReplaceParameters="false" TargetFileName="DirectXCommon.h">BASE\DirectXCommon.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="StringUtility.h">BASE\StringUtility.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="TextureManager.h">BASE\TextureManager.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="WinApp.h">BASE\WinApp.h</ProjectItem>
+      </Folder>
+      <Folder Name="scene" TargetFolderName="scene">
+        <ProjectItem ReplaceParameters="false" TargetFileName="GameScene.h">SCENE\GameScene.h</ProjectItem>
+      </Folder>
+      <Folder Name="input" TargetFolderName="input">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Input.h">INPUT\Input.h</ProjectItem>
+      </Folder>
+      <Folder Name="math" TargetFolderName="math">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Matrix4x4.h">MATH\Matrix4x4.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Vector2.h">MATH\Vector2.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Vector3.h">MATH\Vector3.h</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Vector4.h">MATH\Vector4.h</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="false" TargetFileName="TerrainPS.hlsl">RESOURCES\SHADERS\TerrainPS.hlsl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="TerrainVS.hlsl">RESOURCES\SHADERS\TerrainVS.hlsl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ObjPS.hlsl">RESOURCES\SHADERS\ObjPS.hlsl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ObjVS.hlsl">RESOURCES\SHADERS\ObjVS.hlsl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="PrimitivePS.hlsl">RESOURCES\SHADERS\PrimitivePS.hlsl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="PrimitiveVS.hlsl">RESOURCES\SHADERS\PrimitiveVS.hlsl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ShapePS.hlsl">RESOURCES\SHADERS\ShapePS.hlsl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="ShapeVS.hlsl">RESOURCES\SHADERS\ShapeVS.hlsl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SpritePS.hlsl">RESOURCES\SHADERS\SpritePS.hlsl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="SpriteVS.hlsl">RESOURCES\SHADERS\SpriteVS.hlsl</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Obj.hlsli">RESOURCES\SHADERS\Obj.hlsli</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Primitive.hlsli">RESOURCES\SHADERS\Primitive.hlsli</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Shape.hlsli">RESOURCES\SHADERS\Shape.hlsli</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Terrain.hlsli">RESOURCES\SHADERS\Terrain.hlsli</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="Sprite.hlsli">RESOURCES\SHADERS\Sprite.hlsli</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
